@@ -1,3 +1,5 @@
+# Blog Generation Website where we can generate any blog of user defined number of words and desired style of writing the blog.
+
 <img src="images/LLama_3.jpeg" alt="LLaMA 3 Logo" width="500"/>
 
 ## To Run the Generate Blog Code we need to follow a few steps given below
