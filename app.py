@@ -4,6 +4,7 @@ from langchain.llms import CTransformers
 
 # Function to get response from LLama 2 Model
 
+
 def getLLamaresponse(input_text,no_words,blog_style):
     
     # LLama2 model
@@ -24,7 +25,7 @@ def getLLamaresponse(input_text,no_words,blog_style):
     response = llm(prompt.format(blog_style = blog_style, input_text = input_text, no_words = no_words))
     print(response)
     return response
-    
+
 st.set_page_config(page_title="Generate Blogs",
                    page_icon="👨‍🎨",
                    layout='centered',
@@ -32,16 +33,16 @@ st.set_page_config(page_title="Generate Blogs",
 
 st.header("Generate Blogs 👨‍🎨")
 
-input_text = st.text_input("Enter the Blog Topic")
+input_text = st.text_input("Enter the Blog Topic", value= "", placeholder="Blog Topic")
 
 # Creating 2 more columns for additional 2 fields
 
 col1,col2=st.columns([5,5])
 
 with col1:
-    no_words = st.text_input("No of Words")
+    no_words = st.text_input("Number of Words", value="", placeholder="Words")
 with col2:
-    blog_style = st.selectbox("Writing the Blog for", ("Researchers","Data Scientist", "Comman People"), index = 0)
+    blog_style = st.selectbox("Writing the Blog in", ("Humanistic Style","Detailed Style", "Persuasive Style","Influential Style", "Conversational Style", "Storytelling Style", "Design-Oriented Style"), index = 0)
     
 submit = st.button("Generate")
 
