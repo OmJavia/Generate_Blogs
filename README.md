@@ -28,3 +28,5 @@ Step 4 : After Everthing is done
 
      # For Running the Project type 
         --> streamlit run app.py
+
+Now You can use the project !
