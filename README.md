@@ -1,7 +1,8 @@
 # Blog Generation Website where we can generate any blog of user defined number of words and desired style of writing the blog.
 
 <img src="images/Blog.png" alt="Blog" width="800"/>
-## To Run the Generate Blog Code we need to follow a few steps given below
+
+## To Run the code you need to follow few steps given below
 
 Step 1 : Open Terminal and in the terminal click on plus icon and choose command prompt
 
